@@ -43,7 +43,7 @@ npx expo start
 Durante o desenvolvimento, identifiquei que o **Google Cloud Maps SDK** exige um faturamento mínimo obrigatório (pré-pagamento) de **R$ 200,00** para liberar a visualização das camadas de ruas, conforme comprovado abaixo:
 
 <p align="center">
-  <img src="./mobile/aviso_google.png" alt="Aviso de faturamento do Google Cloud" width="600px">
+  <img src="./mobile/aviso_google.png" alt="Aviso de faturamento do Google Cloud mostrando requisito de pré-pagamento de R$ 200,00 para ativar o Google Maps SDK. A interface exibe uma seção obrigatória em vermelho, um aviso em amarelo com ícone de alerta, e informações sobre transferência de dinheiro para o Google. Inclui botão azul Comece gratuitamente e links para mais detalhes sobre formas de pagamento. Tom: informativo e de aviso sobre restrições financeiras." width="600px">
 </p>
 
 **Decisão Técnica:** Para garantir a viabilidade do teste sem custos financeiros, optei por manter o **Provider Nativo**. 
