@@ -4,6 +4,17 @@ O **Nearby** é uma aplicação completa (Fullstack) que utiliza geolocalizaçã
 
 ---
 
+Durante o desenvolvimento, identifiquei que o **Google Cloud Maps SDK** exige um faturamento mínimo obrigatório (pré-pagamento) de **R$ 200,00** para liberar a visualização das camadas de ruas, conforme comprovado abaixo:
+
+<p align="center">
+  <img src="./mobile/aviso_google.png" alt="Aviso de faturamento do Google Cloud mostrando requisito de pré-pagamento de R$ 200,00 para ativar o Google Maps SDK. A interface exibe uma seção obrigatória em vermelho, um aviso em amarelo com ícone de alerta, e informações sobre transferência de dinheiro para o Google. Inclui botão azul Comece gratuitamente e links para mais detalhes sobre formas de pagamento. Tom: informativo e de aviso sobre restrições financeiras." width="600px">
+</p>
+
+**Decisão Técnica:** Para garantir a viabilidade do teste sem custos financeiros, optei por manter o **Provider Nativo**. 
+- O código de integração está 100% pronto no arquivo `home.tsx`.
+- A lógica de Pins (Marcadores) e consumo de dados da API via Axios está validada.
+- Ao rodar o projeto, o mapa utilizará o serviço padrão do sistema (iOS/Android) para exibir a geolocalização dos estabelecimentos retornados pelo backend.
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Backend:** Node.js, Express, Prisma (SQLite)
@@ -40,13 +51,3 @@ npx expo start
 
 ### 🗺️ Renderização do Mapa e Google Cloud
 
-Durante o desenvolvimento, identifiquei que o **Google Cloud Maps SDK** exige um faturamento mínimo obrigatório (pré-pagamento) de **R$ 200,00** para liberar a visualização das camadas de ruas, conforme comprovado abaixo:
-
-<p align="center">
-  <img src="./mobile/aviso_google.png" alt="Aviso de faturamento do Google Cloud mostrando requisito de pré-pagamento de R$ 200,00 para ativar o Google Maps SDK. A interface exibe uma seção obrigatória em vermelho, um aviso em amarelo com ícone de alerta, e informações sobre transferência de dinheiro para o Google. Inclui botão azul Comece gratuitamente e links para mais detalhes sobre formas de pagamento. Tom: informativo e de aviso sobre restrições financeiras." width="600px">
-</p>
-
-**Decisão Técnica:** Para garantir a viabilidade do teste sem custos financeiros, optei por manter o **Provider Nativo**. 
-- O código de integração está 100% pronto no arquivo `home.tsx`.
-- A lógica de Pins (Marcadores) e consumo de dados da API via Axios está validada.
-- Ao rodar o projeto, o mapa utilizará o serviço padrão do sistema (iOS/Android) para exibir a geolocalização dos estabelecimentos retornados pelo backend.
