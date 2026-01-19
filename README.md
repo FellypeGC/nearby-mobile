@@ -4,6 +4,8 @@ O **Nearby** é uma aplicação completa (Fullstack) que utiliza geolocalizaçã
 
 ---
 
+### 🗺️ Renderização do Mapa e Google Cloud
+
 Durante o desenvolvimento, identifiquei que o **Google Cloud Maps SDK** exige um faturamento mínimo obrigatório (pré-pagamento) de **R$ 200,00** para liberar a visualização das camadas de ruas, conforme comprovado abaixo:
 
 <p align="center">
@@ -48,6 +50,4 @@ npm install
 
 # Iniciar o Expo
 npx expo start
-
-### 🗺️ Renderização do Mapa e Google Cloud
 
