@@ -2,6 +2,15 @@
 
 O **Nearby** é uma aplicação completa (Fullstack) que utiliza geolocalização para listar mercados e estabelecimentos parceiros próximos ao usuário. A aplicação permite filtrar locais por categorias e visualizar detalhes para o resgate de cupons de benefícios através da leitura de QR Codes.
 
+**Status do Projeto:** Atualizado e Funcional (Janeiro/2026) (Feito primeiramente em Dezembro de 2024)
+
+---
+## 💡 Observações Técnicas de Manutenção
+Este projeto passou por uma revisão técnica em 2026 para garantir o funcionamento das rotas de API e integração com o banco de dados SQLite via Prisma 5.21.0.
+
+* **Compatibilidade**: Ajustado para rodar perfeitamente no Expo SDK atual.
+* **Decisão de API**: Mantive o uso do Provider Nativo de mapas para evitar custos de faturamento (R$ 200,00 de pré-pagamento) exigidos pela plataforma Google Cloud no momento.
+
 ---
 
 ### 🗺️ Renderização do Mapa e Google Cloud
